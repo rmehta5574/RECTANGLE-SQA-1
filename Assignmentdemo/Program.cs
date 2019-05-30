@@ -38,10 +38,10 @@ namespace Assignmentdemo
                     switch (choice)
                     {
                         case 1:
-                            Console.WriteLine("rectangwdawdwle length: " + objRectabgle.GetLength());
+                            Console.WriteLine("rectangle length: " + objRectabgle.GetLength());
                             break;
                         case 2:
-                            Console.WriteLine("Enter lendqwdqwdqwwdwqdqgth of rectangle: ");
+                            Console.WriteLine("Enter length of rectangle: ");
                             int length = Convert.ToInt32(Console.ReadLine());
                             if (length > 0)
                                 objRectabgle.SetLength(length);

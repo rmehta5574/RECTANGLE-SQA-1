@@ -12,6 +12,7 @@ namespace TestCase1
     class Class1
     {
         [Test]
+        //testing of set length
         public void TestGetLength_input4_expectLength4()
         {
             int l = 4;
@@ -22,6 +23,7 @@ namespace TestCase1
         }
 
         [Test]
+        //testing of getting inputed length
         public void TestSetLength_input3_expectLength3()
         {
             int l = 4;
@@ -32,43 +34,51 @@ namespace TestCase1
         }
 
         [Test]
-        public void TestSetWidth_input3_expectLength3()
+        ////testing of setting width
+        public void TestSetWidth_input4_expectwidth4()
         {
             int l = 5;
             int w = 4;
             Rectangle rect = new Rectangle(l, w);
-            int length = rect.GetLength();
-            Assert.AreEqual(length, l);
+            int width = rect.GetWidth();
+            Assert.AreEqual(width, w);
         }
 
         [Test]
-        public void TestGetWidth_input3_expectLength3()
+        //testing of getting width
+        public void TestGetWidth_input4_expectwidth4()
         {
+            
             int l = 5;
             int w = 4;
             Rectangle rect = new Rectangle(l, w);
-            int length = rect.GetLength();
-            Assert.AreEqual(length, l);
+            int width = rect.GetWidth();
+            Assert.AreEqual(width, w);
         }
 
         [Test]
+        //checking parameter expected value
         public void TestPerimeter_input5_expectPerimeter20()
         {
+
             int l = 5;
             int w = 5;
+            int p = 20;
             Rectangle rect = new Rectangle(l, w);
-            int length = rect.GetLength();
-            Assert.AreEqual(length, l);
+            int perimeter = rect.GetPerimeter();
+            Assert.AreEqual(perimeter, p);
         }
 
         [Test]
+        //checking value of expected area
         public void TestPerimeter_input5_expectArea25()
         {
             int l = 5;
             int w = 5;
+            int a = 25;
             Rectangle rect = new Rectangle(l, w);
-            int length = rect.GetLength();
-            Assert.AreEqual(length, l);
+            int area = rect.GetArea();
+            Assert.AreEqual(area, a);
         }
     }
 }
