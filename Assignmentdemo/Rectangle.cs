@@ -46,7 +46,7 @@ namespace Assignmentdemo
 
         public int GetPerimeter()
         {
-            return 2 * (length + width);
+            return (length + width);
         }
 
         public int GetArea()
