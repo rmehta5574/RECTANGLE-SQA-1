@@ -52,8 +52,10 @@ namespace Assignmentdemo
                         case 3:
                             Console.WriteLine("rectangle Width0: " + objRectabgle.GetWidth());
                             break;
+
+
                         case 4:
-                            Console.WriteLine("Enter width of rectangle: ");
+                            Console.WriteLine("  Enter width of rectangle: ");
                             int width = Convert.ToInt32(Console.ReadLine());
                             objRectabgle.SetWidth(width);
                             if (width > 0)
